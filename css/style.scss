@@ -1,0 +1,127 @@
+/* =======================BASE======================= */
+
+*{
+  margin: 0;
+  font-family: 'Trykker', serif;
+}
+
+/* ===================SECCION HOME================== */
+
+#home{
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.2)), url('../images/cover1.jpg') no-repeat center top;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  position: relative;
+}
+.text-home{
+  color: #000;
+  margin-top: 27%;
+  text-shadow: -2px -2px 2px #fff;
+}
+.name-home , h1{
+  padding-bottom: 15px;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.name-home , h4{
+  padding: 0 auto;
+  font-size: 1rem;
+  font-weight: bold;
+}
+/* #home .social a{ */
+ /* font-size: 1.2rem; */
+ /* display: inline-block; */
+ /* margin-right: 10px; */
+ /* text-align: center; */
+ /* color: #fff; */
+ /* text-shadow: -3px -3px 2px #000; */
+/* } */
+/* #home .social a:hover{ */
+ /* text-shadow: 2px 2px 1px #fff; */
+ /* color: #000; */
+ /* background: rgba(255, 255, 255, 0); */
+ /* transform: scale(1.5); */
+ /* transition: transform 3s ; */
+/* } */
+.navbar-dark .navbar-toggler {
+  color: transparent;
+  border-color: transparent;
+}
+.home__button{
+  position: absolute;
+  font-size: 0.8rem;
+  border: 2px solid #FF9400;
+  display: inline;
+  padding: 8px 35px;
+  border-radius: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home__button:hover{
+  cursor: pointer;
+  background: #FF6A00;
+  transition: background 1s ;
+  color: #000;
+}
+
+@media (min-width:576px) {
+  .text-home{
+    margin-top: 15%;
+  }
+  .name-home , h1{
+    font-size: 2.3rem;
+    font-weight: bold;
+  }
+  .name-home , h4{
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  /* #home .social a{ */
+   /* font-size: 1.3rem; */
+  /* } */
+}
+@media (min-width:768px) {
+  .name-home , h1{
+    font-size: 3rem;
+    font-weight: normal ;
+  }
+  .name-home , h4{
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+  /* #home .social a{ */
+   /* font-size: 1.3rem; */
+  /* } */
+}
+@media (min-width:992px) {
+  .name-home , h1{
+    font-size: 4rem;
+  }
+  .name-home , h4{
+    font-size: 1.6rem;
+  }
+  /* #home .social a{ */
+   /* font-size: 1.5rem; */
+  /* } */
+}
+
+
+
+
+
+/* ==================== Adicionales =================== */
+
+/* boton scrollup */
+
+#js_up{
+  display: none;
+  position: absolute;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0.8;
+  cursor: pointer;
+}
