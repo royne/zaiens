@@ -1,0 +1,338 @@
+/* =======================BASE======================= */
+
+*{
+  margin: 0;
+  font-family: 'Trykker', serif;
+}
+
+/* ===================SECCION HOME================== */
+
+#home{
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.2)), url('../images/cover1.jpg') no-repeat center top;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  position: relative;
+}
+.slider{
+  width: 100%;
+  height: 100vh !important;
+  background-image: linear-gradient(#000, rgba(255, 255, 255, 0.3));
+  // z-index: 1;
+}
+.slider img{
+  position: fixed;
+  opacity: 0.7;
+  height: 100vh !important;
+}
+
+.text-home{
+  color: #000;
+  margin-top: 27%;
+  text-shadow: -2px -2px 2px #fff;
+}
+.name-home , h1{
+  padding-bottom: 15px;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.name-home , h4{
+  padding: 0 auto;
+  font-size: 1rem;
+  font-weight: bold;
+}
+/* #home .social a{ */
+ /* font-size: 1.2rem; */
+ /* display: inline-block; */
+ /* margin-right: 10px; */
+ /* text-align: center; */
+ /* color: #fff; */
+ /* text-shadow: -3px -3px 2px #000; */
+/* } */
+/* #home .social a:hover{ */
+ /* text-shadow: 2px 2px 1px #fff; */
+ /* color: #000; */
+ /* background: rgba(255, 255, 255, 0); */
+ /* transform: scale(1.5); */
+ /* transition: transform 3s ; */
+/* } */
+.navbar-dark .navbar-toggler {
+  color: transparent;
+  border-color: transparent;
+}
+.home__button{
+  position: absolute;
+  margin-bottom: 100px;
+  font-size: 0.8rem;
+  border: 2px solid #FF9400;
+  display: inline;
+  padding: 8px 35px;
+  border-radius: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home__button:hover{
+  cursor: pointer;
+  background: #FF6A00;
+  transition: background 1s ;
+  color: #000;
+}
+
+@media (min-width:576px) {
+  .text-home{
+    margin-top: 15%;
+  }
+  .name-home , h1{
+    font-size: 2.3rem;
+    font-weight: bold;
+  }
+  .name-home , h4{
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  /* #home .social a{ */
+   /* font-size: 1.3rem; */
+  /* } */
+}
+@media (min-width:768px) {
+  .name-home , h1{
+    font-size: 3rem;
+    font-weight: normal ;
+  }
+  .name-home , h4{
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+  /* #home .social a{ */
+   /* font-size: 1.3rem; */
+  /* } */
+}
+@media (min-width:992px) {
+  .name-home , h1{
+    font-size: 3.5rem;
+  }
+  .name-home , h4{
+    font-size: 1.5rem;
+  }
+  /* #home .social a{ */
+   /* font-size: 1.5rem; */
+  /* } */
+}
+
+
+/* ======================= section 2 ==================== */
+
+#section2{
+  visibility: hidden;
+}
+.section_2{
+  position: absolute;
+  // border: 1px solid red;
+  width: 90%;
+  top: 90%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section_2 p{
+  color: #FFF;
+  font-size: 1.5rem;
+  margin-right: 10%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.section_2 .detail{
+  text-align: center;
+  // padding-left: 5%;
+
+}
+.section_2 .detail span{
+  font-size: 3.5rem;
+  color: #FF6A00;
+}
+.section_2 .detail article{
+  font-size: 1.3rem;
+  color: #FFF;
+}
+.section_2 .detail .text_article{
+  color: #aaaaaa !important;
+  font-size: 1rem;
+}
+
+
+/* =======================Section 3 ==================== */
+#section3{
+  display: none;
+}
+.section_3{
+  position: relative;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.section_3 img{
+  display: flex;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+  border: 3px solid #FF6A00;
+  border-radius: 50%;
+}
+.section_3 h3{
+  color: #FF6A00;
+  text-shadow: 1px 1px 1px #000;
+}
+
+
+/* =====================section 4 ======================*/
+
+#section4{
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/cam.jpg') no-repeat center top;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+  background-attachment: fixed;
+  position: relative;
+  align-items: center;
+  display: flex;
+  border-top: 2px solid rgba(255, 106, 0, 0.5);
+  border-bottom: 2px solid rgba(255, 106, 0, 0.5);
+}
+#section4 div > h2{
+  position: absolute;
+  color: #FF6A00;
+  text-shadow: 1px 1px 1px #FFFFFF;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  /* font-weight: bold; */
+}
+
+
+/* ====================== Section 5 ===================*/
+
+
+#section5{
+  background: #000;
+  /* border-bottom: 2px solid rgba(255, 106, 0, 0.5); */
+}
+.section_5_icon{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon_crosshairs{
+  color: #FF6A00;
+  font-size: 10rem;
+  text-shadow: -2px 2px 1px #FFFFFF;
+}
+.section_5{
+  color: #FF6A00;
+  padding: 100px 0;
+  text-align: right;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+.section_5 > span{
+  color: #FFFFFF;
+  text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+
+/* ==================seccion Contacto==================== */
+
+
+#contact{
+  background: #000;
+  padding: 30px 0 ;
+  color: #fff;
+  text-shadow: -2px -2px 2px rgba(0,0,0,0.3);
+}
+#contact .text-title{
+  font-size: 1.7rem;
+  text-shadow: -2px -2px 2px rgba(0,0,0,0.3);
+  padding: 20px 0;
+}
+#contact .contact-text{
+  padding-top: 50px 0;
+  font-size: 1rem;
+}
+#contact .line-div-dark{
+  padding-bottom: 15px;
+}
+#contact .social a{
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  color: #fff;
+  text-shadow: -3px -3px 2px #000;
+}
+#contact .social a:hover{
+  text-shadow: 2px 2px 1px #fff;
+  color: #000;
+  background: rgba(255, 255, 255, 0);
+  transform: scale(1.5);
+  transition: transform 3s ;
+}
+#legal{
+  background: #000;
+  border-top: solid 1px #949791 ;
+  color: #fff ;
+  padding: 5px;
+  width: 100%;
+}
+
+
+
+@media (min-width:576px) {
+  #contact{
+    padding: 80px 100px 100px 80px ;
+  }
+  #contact .contact-text{
+    padding-top: 50px;
+    padding-left: 100px;
+    text-align: left;
+  }
+  #contact .text-title{
+    font-size: 2.3rem;
+    padding: 10px 0;
+  }
+  #contact .social a{
+    font-size: 1.3rem;
+  }
+}
+
+
+
+/* ==================== Adicionales =================== */
+
+/* boton scrollup */
+
+#js_up{
+  display: none;
+  position: absolute;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0.8;
+  cursor: pointer;
+  border: 2px solid #FF6A00;
+  border-radius: 50%;
+}
+.hidden_section3{
+  display: none;
+}
+.line-div{
+  border-top: 4px solid rgba(255, 106, 0, 0.5);
+  margin: 0 auto;
+}
