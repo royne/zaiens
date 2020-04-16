@@ -11,19 +11,19 @@ $(document).ready(function(){
   // section2
   $(window).scroll(function(){
     if ($(this).scrollTop() > 200) {
-      $('#section2').css('visibility', 'visible');
+      $('#section2').css('visibility', 'visible').fadeIn();
     } else {
-      $('#section2').css('visibility', 'hidden');
+      $('#section2').fadeOut().css('visibility', 'hidden');
     }
   });
 
   // section3
   $(window).scroll(function(){
-    if ($(this).scrollTop() > 650) {
-      $('#section3').fadeIn();
+    if ($(this).scrollTop() > 750) {
+      console.log($(this).scrollTop())
+      $('.box_services').fadeIn();
     } else {
-      $('#section3').fadeOut();
-      $('.hidden_section3').fadeOut();
+      $('.box_services').fadeOut();
     }
   });
 
@@ -42,5 +42,20 @@ $(document).ready(function(){
 
 // animacion boton top
 $('#js_up').click(function(){
-  $('body, html').animate({scrollTop: 0 }, 1000);
+  $('body, html').animate({scrollTop: 0 }, 2000);
+});
+
+
+// animation down 
+$('.home__button, #sec_2, #sec_3, #sec_4').click(function (e) {
+  e.preventDefault()
+  console.log(this.id)
+  if (this.id == 'sec_2' || this.id == 'h_button') {
+    $('body, html').animate({ scrollTop: 500 }, 2000);    
+  } else if (this.id == 'sec_3'){
+    console.log('entro')
+    $('body, html').animate({ scrollTop: 1000 }, 3500);  
+  } else if (this.id == 'sec_4'){
+    $('body, html').animate({ scrollTop: 3000 }, 5000);  
+  }
 });
